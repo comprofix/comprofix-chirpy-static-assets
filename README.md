@@ -12,8 +12,7 @@ It can be used as a Hugo Module for theme development or local site builds.
 
 # Comprofix Website Static Assets
 
-This repository contains my personal assets for the [Comprofix.com](https://comprofix.com) website, built for the [Hugo Chirpy theme](https://github.com/comprofix/hugo-theme-chirpy).  
-It includes all merges and changes from the development repository.
+This repository contains my personal assets for the [Comprofix.com](https://comprofix.com) website so it can be used as a Hugo Module. It includes all merges and changes from my development repository.
 
 ## Related Repositories
 
