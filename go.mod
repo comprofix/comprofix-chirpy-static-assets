@@ -1,3 +1,3 @@
-module github.com/geekifan/chirpy-static-assets
+module git.comprofix.com/mmckinnon/chirpy-static-assets
 
 go 1.24.2
