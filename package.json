@@ -30,6 +30,6 @@
     "tocbot": "^4.36.4"
   },
   "devDependencies": {
-    "fs-extra": "^11.3.1"
+    "fs-extra": "^11.3.3"
   }
 }
