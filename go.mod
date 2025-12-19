@@ -1,3 +1,3 @@
-module git.comprofix.com/mmckinnon/chirpy-static-assets
+module github.com/comprofix/comprofix-chirpy-static-assets
 
-go 1.24.2
+go 1.25.5
