@@ -6,6 +6,7 @@
   "automergeStrategy": "rebase",
   "commitBodyTable": true,
   "ignoreTests": true,
+  "rangeStrategy": "bump",
   "major": {
     "automerge": false,
     "commitMessagePrefix": "chore(deps-major): ",
