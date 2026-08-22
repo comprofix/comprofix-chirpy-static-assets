@@ -69,4 +69,27 @@ dependencies.forEach(pkg => {
   console.log(`✅ Finished processing: ${pkg}`);
 });
 
+// Font packages: copied into static/fonts (served directly, not via the
+// Hugo asset pipeline), keeping upstream file names as shipped by each
+// package rather than the JS-lib layout above.
+const staticFontsRoot = path.join(root, 'static/fonts');
+const fontPackages = [
+  { pkg: 'lato-font', srcDir: 'fonts', destDir: 'lato-font' },
+  { pkg: 'source-sans', srcDir: 'WOFF2/TTF', destDir: 'source-sans' },
+];
+
+fontPackages.forEach(({ pkg, srcDir, destDir }) => {
+  const srcPath = path.join(nodeModules, pkg, srcDir);
+  const destPath = path.join(staticFontsRoot, destDir);
+
+  if (!fs.existsSync(srcPath)) {
+    console.warn(`Font package source not found: ${pkg}/${srcDir}`);
+    return;
+  }
+
+  fs.rmSync(destPath, { recursive: true, force: true });
+  copyFolder(srcPath, destPath);
+  console.log(`✅ Finished processing font package: ${pkg}`);
+});
+
 console.log('🎉 All npm assets copied into Hugo-compatible structure.');
