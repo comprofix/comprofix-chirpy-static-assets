@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('lato-font/lato-light/lato-light.woff2') format('woff2'),
+       url('lato-font/lato-light/lato-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('lato-font/lato-normal/lato-normal.woff2') format('woff2'),
+       url('lato-font/lato-normal/lato-normal.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('source-sans/SourceSans3-Regular.ttf.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('source-sans/SourceSans3-Semibold.ttf.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('source-sans/SourceSans3-Bold.ttf.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('source-sans/SourceSans3-Black.ttf.woff2') format('woff2');
+}
