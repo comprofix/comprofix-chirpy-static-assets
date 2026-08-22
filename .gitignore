@@ -38,7 +38,6 @@ out/
 
 # Nuxt.js build output
 .nuxt/
-dist/
 
 # Vuepress build output
 .vuepress/dist
