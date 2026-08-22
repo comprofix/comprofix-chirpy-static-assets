@@ -42,6 +42,11 @@ dependencies.forEach(pkg => {
     return;
   }
 
+  // Clear the target first so stale output from a previous version -
+  // e.g. content-hashed chunk files that no longer exist upstream -
+  // doesn't linger indefinitely.
+  fs.rmSync(targetFolder, { recursive: true, force: true });
+
   // Copy main/module files
   const depPkgJsonPath = path.join(pkgPath, 'package.json');
   if (fs.existsSync(depPkgJsonPath)) {
